@@ -3,9 +3,21 @@
   text-decoration: none;
   padding: 12px;
   font-weight: 700;
+  font-size: 18px;
   color: #2a363b;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: text-shadow 0.3s ease-in-out;
 }
 
-.link.active {
-  color: #e84a5f;
+.link:active {
+  color: rgb(202, 159, 216);
+}
+
+.link:hover {
+  color: rgb(202, 159, 216);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
 }
