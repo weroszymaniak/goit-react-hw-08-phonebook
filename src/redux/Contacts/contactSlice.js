@@ -1,10 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchContacts, addContact, removeContact } from './operations';
 
-// const savedContacts = localStorage.getItem('contacts');
-// const parsedContacts = JSON.parse(savedContacts) || [];
-
-// const initialState = parsedContacts;
 const handlePending = state => {
   state.isLoading = true;
 };
@@ -51,5 +47,4 @@ const contactSlice = createSlice({
   },
 });
 
-// export const { addContact, removeContact } = contactSlice.actions;
 export const contactsReducer = contactSlice.reducer;
